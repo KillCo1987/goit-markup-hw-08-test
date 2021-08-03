@@ -1,0 +1,127 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .portfolio-header {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .main-section-portfolio {
+    padding-top: 60px;
+  }
+
+  .buttons-list-wrapper button {
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    font-family: var(--main-font), sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    border: none;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .buttons-list-wrapper__item:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+
+  .buttons-list-wrapper__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card-data-portfolio {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .card-data-portfolio__suptitle-text {
+    font-family: var(--main-font), sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--label-color);
+
+    margin-bottom: 4px;
+  }
+
+  .card-data-portfolio__text {
+    font-family: var(--main-font), sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+  }
+
+  .projects-list-wrapper {
+    display: block;
+    // justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .projects-list-wrapper__item:not(.card-data-portfolio) {
+    margin-left: 0;
+    // margin-top: 0;
+    // text-align: center;
+    margin-bottom: 0;
+  }
+
+  .buttons-list-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+
+    & button:hover,
+    & button:focus {
+      color: var(--secondary-main-color);
+      background-color: var(--interactive-color);
+    }
+  }
+
+  .projects-list-img-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 450px;
+      height: 294px;
+    }
+  }
+
+  /* = = = = = PORTFOLIO Interactive section = = = = = */
+
+  .link-card-projects-wrapper:hover,
+  .link-card-projects-wrapper:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  button.current {
+    background-color: var(--interactive-color);
+    color: var(--secondary-main-color);
+  }
+
+  .link-card-projects-wrapper:hover .overlay,
+  .link-card-projects-wrapper:focus .overlay {
+    transform: translateY(0%);
+  }
+}

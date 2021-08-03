@@ -1,0 +1,21 @@
+//BASE
+@import "./base/container";
+@import "./base/common";
+@import "./base/section-padding";
+
+//COMPONENTS
+@import "./components/suptitle";
+
+//UTILS
+@import "./utils/variables";
+
+//LAYOUTS
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/values";
+@import "./layouts/what-we-do";
+@import "./layouts/team";
+@import "./layouts/our-clients";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./layouts/portfolio";

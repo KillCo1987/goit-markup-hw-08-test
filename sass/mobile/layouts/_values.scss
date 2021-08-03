@@ -1,0 +1,48 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .values-section {
+    background: #ffffff;
+  }
+
+  .values-list-wrapper {
+    display: block;
+
+    h3 {
+      text-align: center;
+      font-family: var(--main-font), sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--label-color);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: var(--main-font), sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.71;
+
+      letter-spacing: 0.03em;
+
+      color: var(--description-color);
+    }
+  }
+
+  .values-list-wrapper__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  /* = = = = = = = = = = = */
+
+  .values-svg-wrapper {
+    text-align: center;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+}

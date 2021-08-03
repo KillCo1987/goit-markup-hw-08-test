@@ -1,0 +1,29 @@
+//UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//BASE
+@import "./base/common";
+@import "./base/container";
+@import "./base/section-padding";
+
+//COMPONENTS
+@import "./components/suptitle";
+@import "./components/current";
+
+//LAYOUTS
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/values";
+@import "./layouts/what-we-do";
+@import "./layouts/team";
+@import "./layouts/our-clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
+@import "./layouts/modal";
+
+//MOBILE
+@import "../sass/mobile/mobile.scss";
+
+//TABLET
+@import "./tablet/tablet.scss";
