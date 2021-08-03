@@ -749,96 +749,98 @@
     <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <form action="#" method="get" class="modal-form">
-          <p class="modal-form__suptitle-text">
-            Оставьте свои данные, мы вам перезвоним
-          </p>
-          <label for="" class="modal-form__label">
-            Имя
-            <div class="modal-form-input-wrapper">
+      <div class="container">
+        <div class="modal">
+          <form action="#" method="get" class="modal-form">
+            <p class="modal-form__suptitle-text">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+            <label for="" class="modal-form__label">
+              Имя
+              <div class="modal-form-input-wrapper">
+                <input
+                  class="modal-form-input-wrapper__input"
+                  type="text"
+                  name="user-name"
+                  id=""
+                  required
+                  minlength="2"
+                  pattern="[A-Za-zА-Яа-яЁё]+"
+                  title="Имя должно содержать только буквы."
+                />
+                <svg class="modal-form__icon" width="12" height="12">
+                  <use href="./images/sprite.svg#icon-user"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label for="" class="modal-form__label">
+              Телефон
+              <div class="modal-form-input-wrapper">
+                <input
+                  class="modal-form-input-wrapper__input"
+                  type="tel"
+                  name="user-tel"
+                  id=""
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="096-000-00-00"
+                />
+                <svg class="modal-form__icon" width="13" height="13">
+                  <use href="./images/sprite.svg#icon-telephone"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label for="" class="modal-form__label">
+              Почта
+              <div class="modal-form-input-wrapper">
+                <input
+                  class="modal-form-input-wrapper__input"
+                  type="email"
+                  name="user-email"
+                  id=""
+                  required
+                />
+                <svg class="modal-form__icon" width="15" height="12">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label for="" class="modal-form__label">
+              Комментарий
+              <textarea
+                name="comments"
+                class="modal-form__comments"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+            <div class="access-policy-wrapper">
               <input
-                class="modal-form-input-wrapper__input"
-                type="text"
-                name="user-name"
-                id=""
-                required
-                minlength="2"
-                pattern="[A-Za-zА-Яа-яЁё]+"
-                title="Имя должно содержать только буквы."
+                type="checkbox"
+                name="modal-checkbox"
+                id="access-policy"
+                class="access-policy-wrapper__checkbox visually-hidden"
               />
-              <svg class="modal-form__icon" width="12" height="12">
-                <use href="./images/sprite.svg#icon-user"></use>
-              </svg>
+
+              <label
+                for="access-policy"
+                class="access-policy-wrapper__label-checkbox"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="access-policy-wrapper__checkbox-link"
+                  >Условия договора</a
+                ></label
+              >
             </div>
-          </label>
-
-          <label for="" class="modal-form__label">
-            Телефон
-            <div class="modal-form-input-wrapper">
-              <input
-                class="modal-form-input-wrapper__input"
-                type="tel"
-                name="user-tel"
-                id=""
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                title="096-000-00-00"
-              />
-              <svg class="modal-form__icon" width="13" height="13">
-                <use href="./images/sprite.svg#icon-telephone"></use>
-              </svg>
-            </div>
-          </label>
-
-          <label for="" class="modal-form__label">
-            Почта
-            <div class="modal-form-input-wrapper">
-              <input
-                class="modal-form-input-wrapper__input"
-                type="email"
-                name="user-email"
-                id=""
-                required
-              />
-              <svg class="modal-form__icon" width="15" height="12">
-                <use href="./images/sprite.svg#icon-email"></use>
-              </svg>
-            </div>
-          </label>
-
-          <label for="" class="modal-form__label">
-            Комментарий
-            <textarea
-              name="comments"
-              class="modal-form__comments"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
-          <div class="access-policy-wrapper">
-            <input
-              type="checkbox"
-              name="modal-checkbox"
-              id="access-policy"
-              class="access-policy-wrapper__checkbox visually-hidden"
-            />
-
-            <label
-              for="access-policy"
-              class="access-policy-wrapper__label-checkbox"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="access-policy-wrapper__checkbox-link"
-                >Условия договора</a
-              ></label
-            >
-          </div>
-          <button type="submit" class="form-modal__button">Отправить</button>
-        </form>
-        <button type="button" class="modal__close-button" data-modal-close>
-          <svg class="modal__icon-close" width="11" height="11">
-            <use href="./images/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+            <button type="submit" class="form-modal__button">Отправить</button>
+          </form>
+          <button type="button" class="modal__close-button" data-modal-close>
+            <svg class="modal__icon-close" width="11" height="11">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
