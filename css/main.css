@@ -997,6 +997,9 @@ button.current {
     padding-right: 15px;
     margin: 0 auto;
   }
+  .container.hero {
+    padding: 0;
+  }
 }
 
 h1,
@@ -1056,7 +1059,6 @@ img {
   .header {
     height: 60px;
     display: flex;
-    width: 100vh;
   }
   .nav-list-wrapper {
     display: none;
